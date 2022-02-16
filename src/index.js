@@ -1,12 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './index.css'
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import DataProvider from './Context/DataContext';
+import ModalStateProvider from './Context/ModalState';
+import axios from 'axios';
+
+axios.defaults.baseURL = 'http://mangyang.qlga.edu.vn/api'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <DataProvider>
+      <ModalStateProvider>
+        <App />
+      </ModalStateProvider>
+    </DataProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

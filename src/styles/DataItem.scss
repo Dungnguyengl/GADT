@@ -1,0 +1,18 @@
+.dataItem{
+     .itemDay{
+          width: 100px;
+     }
+     .btn-group{
+          display: flex;
+          flex-direction: column;
+          .btn {
+               margin: 0.15rem 0;
+               border-radius: .25rem !important;
+               -webkit-border-radius: .25rem ;
+               -moz-border-radius: .25rem ;
+               -ms-border-radius: .25rem ;
+               -o-border-radius: .25rem ;
+          }
+     }
+
+}

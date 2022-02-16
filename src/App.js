@@ -1,24 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import {useContext} from 'react';
+import {Data} from './Context/DataContext';
+import Loading from './Components/Loading';
+import Header from './Components/Header';
+import Content from './Components/Content';
+import { Container, Row } from 'react-bootstrap';
+import Login from './Components/Login';
 
 function App() {
+  const { loading, login:{login:{isLogin}}} = useContext(Data)
+
+  console.log(isLogin);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    !isLogin? 
+    <Login />:
+    loading ? 
+    <Loading /> :
+    <Container>
+      <Row>
+        <Header />
+      </Row>
+      <Row>
+        <Content />
+      </Row>
+    </Container>
   );
 }
 
