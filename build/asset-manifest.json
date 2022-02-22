@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Dungnguyengl/GADT.git/static/css/main.3c8e5f31.css",
+    "main.js": "/Dungnguyengl/GADT.git/static/js/main.376f3736.js",
+    "static/js/787.fb0c3d29.chunk.js": "/Dungnguyengl/GADT.git/static/js/787.fb0c3d29.chunk.js",
+    "index.html": "/Dungnguyengl/GADT.git/index.html",
+    "main.3c8e5f31.css.map": "/Dungnguyengl/GADT.git/static/css/main.3c8e5f31.css.map",
+    "main.376f3736.js.map": "/Dungnguyengl/GADT.git/static/js/main.376f3736.js.map",
+    "787.fb0c3d29.chunk.js.map": "/Dungnguyengl/GADT.git/static/js/787.fb0c3d29.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3c8e5f31.css",
+    "static/js/main.376f3736.js"
+  ]
+}
